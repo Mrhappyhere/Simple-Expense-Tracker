@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(85, 187, 255);
+}
+
+.title {
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    padding: 30px 40px;
+    border-radius: 1rem;
+    border: 3px solid rgb(255, 255, 255);
+    margin: 25px;
+    background-color: rgba(162, 0, 255, 0.685);
+}
+
+h1 {
+    letter-spacing: 1px;
+    margin: 0;
+    margin: 10px 0 10px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+
+h3 {
+    border-bottom: 1px solid rgb(226, 226, 226);
+    padding-bottom: 5px;
+    margin-bottom: 12px;
+    text-align: center;
+    font-weight: 800;
+    color: rgb(51, 255, 0);
+}
+
+h4 {
+    margin: 0;
+    text-transform: uppercase;
+    color: azure;
+}
+
+#balance {
+    color: azure;
+}
+
+.income-expense {
+    background-color: rgb(140, 142, 143);
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: 0 5px 6px rgba(58, 73, 80, 0.685), 0 5px 6px rgba(58, 73, 80, 0.685);
+}
+
+.income-expense>div {
+    flex: 1;
+    text-align: center;
+}
+
+.income,
+.expense,
+#balance {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 5px 0;
+    font-weight: bolder;
+}
+
+.income {
+    color: green;
+}
+
+.expense {
+    color: #c34234d3;
+}
+
+#balance {
+    color: rgb(72, 90, 255);
+}
+
+.bg-dark {
+    background-color: black;
+    margin: 0 2px;
+    border-radius: 3px;
+}
+
+input[type="text"],
+input[type="number"] {
+    border: 1px solid silver;
+    border-radius: 1rem;
+    padding: 5px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 1px 2px 1px #000000;
+}
+
+label {
+    display: inline-block;
+    margin: 10px 0;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 30px;
+    padding: 8px 0;
+    border-radius: 1rem;
+    outline: none;
+    background-color: rgb(38, 156, 253);
+    color: rgb(255, 255, 255);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.btn:hover {
+    color: rgb(38, 156, 253);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: rgb(255, 94, 0);
+    border-radius: 1rem;
+    outline: none;
+    float: right;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+#text:focus,
+#amount:focus {
+    width: 110%;
+    transition: 0.5s;
+    border-bottom: 2px solid rgb(0, 140, 255);
+    border-right: 2px solid rgb(0, 140, 255);
+}
+
+ul {
+    list-style: none;
+    display: inline;
+}
+
+ul li {
+    font-weight: bolder;
+    font-size: 21px;
+}
+
+.fa {
+    color: steelblue;
+}
+
+.fa:hover {
+    transform: rotate(20deg);
+}
+
+#error_msg {
+    color: red;
+    background-color: rgb(224, 189, 183);
+    font-weight: bolder;
+    padding: 0 10px;
+    border-radius: 1rem;
+}
+
+.list {
+    color: rgb(0, 255, 221);
+}
+
+.minus,
+.plus {
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgb(177, 177, 177);
+}
+
+.minus:hover,
+.plus:hover {
+    background-color: rgb(114, 114, 114);
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+}
+
+.guide .guidetxt {
+    visibility: hidden;
+    width: 200px;
+    background-color: rgb(83, 75, 75);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    left: 50%;
+}
+
+.guide:hover .guidetxt {
+    visibility: visible;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Simple Expense Tracker</title>
+</head>
+
+<body>
+    <div class="container">
+        <p id="error_msg"></p>
+        <div class="title">
+            <h1 class="title">
+                <span style="color:green;font-style: bolder;">₹</span>Expense Tracker<span style="color:green;font-style: bolder;">₹</span>
+            </h1>
+        </div>
+        <form id="form">
+            <div class="form-control">
+                <label for="text">Description</label>
+                <input type="text" id="text" onfocus="this.value=''" placeholder="Enter Description" />
+            </div>
+            <div class="form-control">
+                <label for="amount">Amount(<span style="color:green;font-style: bolder;">+</span>/<span style="color:rgb(231, 10, 10);font-style: bolder;">-</span>) <br /> </label>
+                <input type="number" id="amount" onfocus="this.value=''" placeholder="Enter Amount" />
+            </div>
+            <button class="btn">Add transaction</button>
+        </form>
+        <br />
+
+        <div class="income-expense">
+            <div class="bg-dark">
+                <h4>Income</h4>
+                <p class="income" id="income">₹0.00</p>
+            </div>
+            <div class="bg-dark">
+                <h4>Expense</h4>
+                <p class="expense" id="expense">₹0.00</p>
+            </div>
+            <div class="bg-dark">
+                <h4>Balance</h4>
+                <p id="balance">₹0.00</p>
+            </div>
+        </div>
+        <h3>Transaction History</h3>
+        <ul id="list" class="list"></ul>
+        <footer class="guide">
+            <a href="https://github.com/Mrhappyhere" target="_blank">@Mrhappyhere</a>
+            <h3 class="guidetxt">Click here to view creator's profile</h3>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
